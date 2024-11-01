@@ -1,1 +1,131 @@
+STACK - USER DEFINED
+
+ORDERED COLLECTION OF ITEM
+
+top >
+      item 3  < Top
+      item 2
+      item 2
+base >
+
+Store in LAST IN FIRST OUT and FIRST IN LAST OUT order
+
+>>> OPERATION by STACK
+
+1.PUSH : This operation allows to add the element to the stack
+2.POP
+3. PEEK or TOP
+4. isEMPTY
+
+APPLICATION >> UNDO REDO, 
+
+// IMPLEMENTATION:
+    1. FIRST method is using list built in method
+    2. Using different module
+
+// CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+print("STACK OPERATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+
+print("LIFO ORDER")
+
+stack = []
+
+print(len(stack) == 0)
+
+stack.append(10)
+stack.append(20)
+stack.append(30)
+stack.append(40)
+
+print(stack)
+print(stack[-1])
+
+stack.pop()
+
+print(stack)
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+STACK OPERATION >>>>>>>>>>>>
+LIFO ORDER
+True
+[10, 20, 30, 40]
+40
+[10, 20, 30]
+
+// CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+print("STACK OPERATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+
+
+print("STACK OPERATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+
+stack = []
+
+def push():
+    element = input("Enter the element: ")
+    stack.append(element)
+    print(stack)
+    
+def pop():
+    if not stack:
+        print("Stack is empty")
+    else:
+        e = stack.pop()
+        print("Removed element: ", e)
+        print(stack)
+        
+
+while True:
+    print("Select the operation \n1.Push \n2.Pop \n3.Quit")
+    choice = int(input("Enter your choice: "))
+    if choice == 1:
+        push()
+    elif choice == 2:
+        pop()
+    elif choice == 3:
+        break
+    else:
+        print("Enter the correct operation!!")
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+STACK OPERATION >>>>>>>>>>>>
+Select the operation 
+1.Push 
+2.Pop 
+3.Quit
+Enter your choice: 1
+Enter the element: 10
+['10']
+Select the operation 
+1.Push 
+2.Pop 
+3.Quit
+Enter your choice: 1
+Enter the element: 20
+['10', '20']
+Select the operation 
+1.Push 
+2.Pop 
+3.Quit
+Enter your choice: 1
+Enter the element: 30
+['10', '20', '30']
+Select the operation 
+1.Push 
+2.Pop 
+3.Quit
+Enter your choice: 2
+Removed element:  30
+['10', '20']
+Select the operation 
+1.Push 
+2.Pop 
+3.Quit
+Enter your choice: 3
+
+
+
 
