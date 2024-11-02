@@ -1,0 +1,45 @@
+// CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+import collections
+
+stack = collections.deque()
+
+print(stack)
+
+stack.append(10)
+stack.append(20)
+stack.append(30)
+print(stack)
+
+stack.pop()
+print(stack)
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+deque([])
+deque([10, 20, 30])
+deque([10, 20])
+
+=== Code Execution Successful ===
+
+// CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+import queue
+
+stack = queue.LifoQueue(3)
+
+stack.put(10)
+stack.put(20)
+stack.put(30)
+# print(stack)
+print(stack.get())
+print(stack.get())
+print(stack.get())
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+30
+20
+10
+
+=== Code Execution Successful ===
