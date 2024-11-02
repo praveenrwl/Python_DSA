@@ -1,0 +1,8 @@
+// QUEUE is a data structure where we insert data from one side and removed from different side.
+
+End elements are added : back / rear / tail
+End elements are removed : Front / Head
+
+FIFO : First In First Out
+LILO : Last In Last Out
+
