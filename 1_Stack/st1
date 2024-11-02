@@ -127,5 +127,40 @@ Select the operation
 Enter your choice: 3
 
 
+// CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+print("STACK OPERATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+
+stack = []
+
+def push():
+    if len(stack) == n:
+        print("List is Full")
+    else:
+        element = input("Enter the element: ")
+        stack.append(element)
+        print(stack)
+    
+def pop():
+    if not stack:
+        print("Stack is empty")
+    else:
+        e = stack.pop()
+        print("Removed element: ", e)
+        print(stack)
+        
+n = int(input("Limit of Stack!"))
+
+while True:
+    print("Select the operation \n1.Push \n2.Pop \n3.Quit")
+    choice = int(input("Enter your choice: "))
+    if choice == 1:
+        push()
+    elif choice == 2:
+        pop()
+    elif choice == 3:
+        break
+    else:
+        print("Enter the correct operation!!")
 
 
