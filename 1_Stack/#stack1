@@ -1,0 +1,111 @@
+// CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+class Stack:
+    def __init__(self, size):
+        self.size = size
+        self.stack = []
+    
+    def push(self, value):
+        if len(self.stack) < self.size:
+            self.stack.append(value)
+            print(f"Pushed {value} onto the stack.")
+        else:
+            print("Stack overflow! Cannot push.")
+    
+    def pop(self):
+        if self.stack:
+            value = self.stack.pop()
+            print(f"Popped {value} from the stack.")
+        else:
+            print("Stack underflow! Cannot pop.")
+    
+    def display(self):
+        if self.stack:
+            print("Stack contents:", self.stack)
+        else:
+            print("Stack is empty.")
+
+def main():
+    print("Stack Operations")
+    size = int(input("Enter size of the stack: "))
+    stack = Stack(size)
+    while True:
+        print("\nStack Operations:")
+        print("1. Push\n2. Pop\n3. Display\n4. Exit")
+        try:
+            op = int(input("Choose an operation: "))
+            if op == 1:
+                value = int(input("Enter value to push: "))
+                stack.push(value)
+            elif op == 2:
+                stack.pop()
+            elif op == 3:
+                stack.display()
+            elif op == 4:
+                print("Exiting program.")
+                break
+            else:
+                print("Invalid choice. Please choose a valid option.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+if __name__ == "__main__":
+    main()
+
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Stack Operations
+Enter size of the stack: 5
+
+Stack Operations:
+1. Push
+2. Pop
+3. Display
+4. Exit
+Choose an operation: 1
+Enter value to push: 10
+Pushed 10 onto the stack.
+
+Stack Operations:
+1. Push
+2. Pop
+3. Display
+4. Exit
+Choose an operation: 1
+Enter value to push: 20
+Pushed 20 onto the stack.
+
+Stack Operations:
+1. Push
+2. Pop
+3. Display
+4. Exit
+Choose an operation: 3
+Stack contents: [10, 20]
+
+Stack Operations:
+1. Push
+2. Pop
+3. Display
+4. Exit
+Choose an operation: 2
+Popped 20 from the stack.
+
+Stack Operations:
+1. Push
+2. Pop
+3. Display
+4. Exit
+Choose an operation: 3
+Stack contents: [10]
+
+Stack Operations:
+1. Push
+2. Pop
+3. Display
+4. Exit
+Choose an operation: 4
+Exiting program.
+
+=== Code Execution Successful ===
