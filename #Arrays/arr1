@@ -1,0 +1,91 @@
+// CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+class Array:
+    def __init__(self, size):
+        self.size = size
+        self.array = [None] * size
+
+    def update(self, index, value):
+        if 0 <= index < self.size:
+            self.array[index] = value
+            print(f"Updated index {index} with value {value}.")
+        else:
+            print("Index out of bounds.")
+
+    def display(self):
+        print("Array:", self.array)
+
+
+def main():
+    size = int(input("Enter size of the array: "))
+    array = Array(size)
+    while True:
+        print("\nArray Operations:")
+        print("1. Update\n2. Display\n3. Exit")
+        try:
+            op = int(input("Choose an operation: "))
+            if op == 1:
+                index = int(input("Enter index to update: "))
+                value = int(input("Enter value to update: "))
+                array.update(index, value)
+            elif op == 2:
+                array.display()
+            elif op == 3:
+                print("Exiting program.")
+                break
+            else:
+                print("Invalid choice. Please choose a valid option.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+
+if __name__ == "__main__":
+    main()
+
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Enter size of the array: 5
+
+Array Operations:
+1. Update
+2. Display
+3. Exit
+Choose an operation: 1
+Enter index to update: 0
+Enter value to update: 10
+Updated index 0 with value 10.
+
+Array Operations:
+1. Update
+2. Display
+3. Exit
+Choose an operation: 1
+Enter index to update: 1
+Enter value to update: 20
+Updated index 1 with value 20.
+
+Array Operations:
+1. Update
+2. Display
+3. Exit
+Choose an operation: 1
+Enter index to update: 3
+Enter value to update: 40
+Updated index 3 with value 40.
+
+Array Operations:
+1. Update
+2. Display
+3. Exit
+Choose an operation: 2
+Array: [10, 20, None, 40, None]
+
+Array Operations:
+1. Update
+2. Display
+3. Exit
+Choose an operation: 3
+Exiting program.
+
+=== Code Execution Successful ===
