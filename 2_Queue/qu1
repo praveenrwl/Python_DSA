@@ -6,3 +6,88 @@ End elements are removed : Front / Head
 FIFO : First In First Out
 LILO : Last In Last Out
 
+// CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+class Queue:
+    def __init__(self, size):
+        self.size = size
+        self.queue = []
+
+    def enqueue(self, value):
+        if len(self.queue) < self.size:
+            self.queue.append(value)
+            print(f"Enqueued {value} into the queue.")
+        else:
+            print("Queue overflow! Cannot enqueue more elements.")
+
+    def dequeue(self):
+        if self.queue:
+            value = self.queue.pop(0)
+            print(f"Dequeued {value} from the queue.")
+            return value
+        else:
+            print("Queue underflow! Queue is empty.")
+            return None
+
+    def display(self):
+        if self.queue:
+            print("Queue contents:", self.queue)
+        else:
+            print("Queue is empty.")
+
+
+def main():
+    size = int(input("Enter size of the queue: "))
+    queue = Queue(size)
+    while True:
+        print("\nQueue Operations:")
+        print("1. Enqueue\n2. Dequeue\n3. Display\n4. Exit")
+        try:
+            op = int(input("Choose an operation: "))
+            if op == 1:
+                value = int(input("Enter value to enqueue: "))
+                queue.enqueue(value)
+            elif op == 2:
+                queue.dequeue()
+            elif op == 3:
+                queue.display()
+            elif op == 4:
+                print("Exiting program.")
+                break
+            else:
+                print("Invalid choice. Please choose a valid option.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+
+if __name__ == "__main__":
+    main()
+
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Queue Operations:
+1. Enqueue
+2. Dequeue
+3. Display
+4. Exit
+Choose an operation: 1
+Enter value to enqueue: 10
+Enqueued 10 into the queue.
+
+Queue Operations:
+1. Enqueue
+2. Dequeue
+3. Display
+4. Exit
+Choose an operation: 3
+Queue contents: [10]
+
+Queue Operations:
+1. Enqueue
+2. Dequeue
+3. Display
+4. Exit
+Choose an operation: 4
+Exiting program.
+
