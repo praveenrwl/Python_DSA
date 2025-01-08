@@ -1,0 +1,50 @@
+// NOTES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+enqueue: process of adding elements to queue
+dequeue: process of removing the elements from the queue
+
+// CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# QUEUE IN PYTHON
+
+queue = []
+
+queue.append(10)
+queue.append(20)
+queue.append(30)
+
+print(queue)
+
+queue.pop(0)    
+print(queue)
+
+queue.pop(0)    
+print(queue)
+
+#####################################
+queue2 =[]
+
+queue2.insert(0, 60)
+queue2.insert(0, 70)
+queue2.insert(0, 80)
+
+print(queue2)
+
+queue2.pop()
+print(queue2)
+
+
+######################################
+
+queue3 = []
+print(not(queue3))
+
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[10, 20, 30]
+[20, 30]
+[30]
+[80, 70, 60]
+[80, 70]
+True
+
+=== Code Execution Successful ===
