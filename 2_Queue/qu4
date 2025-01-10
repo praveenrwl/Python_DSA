@@ -1,0 +1,56 @@
+# PRORITY QUEUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Elements removed based on the priority
+
+# CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# PRIORITY QUEUE
+
+# 1.List method
+# 2. Priority Queue class
+
+q = []
+
+q.append(20)
+q.append(40)
+q.append(10)
+print(q)
+
+q.sort()
+print(q)
+
+q.pop()
+print(q)
+
+# NOT THE BEST METHOD
+
+
+# OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+[20, 40, 10]
+[10, 20, 40]
+[10, 20]
+
+=== Code Execution Successful ===
+
+# CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# PRIORITY QUEUE
+
+# 1.List method
+# 2. Priority Queue class
+
+import queue
+
+q = queue.PriorityQueue()
+
+q.put(10)
+q.put(10)
+q.put(10)
+print
+
+q.get()
+print(q)
+
+
+# OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
