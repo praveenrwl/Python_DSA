@@ -1,0 +1,68 @@
+# CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Queue In Python
+
+import collections
+
+q = collections.deque()
+print(q)
+
+q.appendleft(10)
+q.appendleft(20)
+q.appendleft(30)
+print(q)
+
+q.pop()
+print(q)
+
+# Check if queue is empty or not
+print(not q)
+
+# Check if element is front or rear side
+print(q[1])
+print(q[-1])
+
+
+# OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+deque([])
+deque([30, 20, 10])
+deque([30, 20])
+False
+20
+20
+
+=== Code Execution Successful ===
+
+
+
+# CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+import queue
+
+q = queue.Queue()
+
+print(not q)
+q.put(10)
+q.put(20)
+q.put(30)
+q.put(40)
+print(q)
+
+q.get()
+print(q)
+
+q.get()
+print(q)
+
+q.get()
+print(q)
+
+# OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+False
+<queue.Queue object at 0x7a9dedf0d520>
+<queue.Queue object at 0x7a9dedf0d520>
+<queue.Queue object at 0x7a9dedf0d520>
+<queue.Queue object at 0x7a9dedf0d520>
+
+=== Code Execution Successful ===
