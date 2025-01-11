@@ -1,0 +1,36 @@
+# NOTES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Node : Elements of LL
+Head
+Tail/End
+
+It is dynamic data structure
+Insertion and Deletion is easy
+Represent and Manipulate polynomials
+Doesn't need contigeous memory allocation
+
+Eg: Web Browser, Music Player, Image Viewer
+
+
+Needs extra memory
+Random access is not possible
+
+
+SINGLY LINKED LIST >>
+  head > data1|link2 > data2|link3 > data3|link4 > data4|NULL
+
+  OPERATION: 
+    ADD > BEGINING, END, MIDDLE/INBETWEEN
+    DELETE > BEGINING, END, MIDDLE/INBETWEEN
+    TRAVERSAL
+
+DOUBLY LINKED LIST
+CIRCULAR LINKED LIST
+
+# CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+# OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
