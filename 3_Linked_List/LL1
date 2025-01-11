@@ -20,8 +20,23 @@ SINGLY LINKED LIST >>
   head > data1|link2 > data2|link3 > data3|link4 > data4|NULL
 
   OPERATION: 
-    ADD > BEGINING, END, MIDDLE/INBETWEEN
-    DELETE > BEGINING, END, MIDDLE/INBETWEEN
+  1. ADD 
+    --> BEGINING
+      1. Create Node 
+      2. Change new_node = next = head   
+      3. head -> new_node
+    --> END
+      1. Create Node 
+      2. goto last node   
+      3. ref lastnode -> new_node
+    --> MIDDLE/INBETWEEN
+      1. Create Node 
+      2. goto node just before required position of new node  
+      3. x.ref -> new_node(z)
+         z.ref -> y
+
+    DELETE --> BEGINING, END, MIDDLE/INBETWEEN
+
     TRAVERSAL
 
 DOUBLY LINKED LIST
