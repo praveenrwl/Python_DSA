@@ -37,7 +37,8 @@ SINGLY LINKED LIST >>
 
     DELETE --> BEGINING, END, MIDDLE/INBETWEEN
 
-    TRAVERSAL
+    TRAVERSAL --> Start with head if head is not NULL access the info
+                  Goto next node access the info
 
 DOUBLY LINKED LIST
 CIRCULAR LINKED LIST
