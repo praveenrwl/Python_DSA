@@ -1,3 +1,42 @@
 // Find Second Largest Element in Array | Remove duplicates from Sorted Array >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 Arrays : Should contain homogenous data types
+
+
+// CODE : BRUTE FORCE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+1. sort array
+2. had last element 
+
+
+print(' Largest Element: ')
+
+arr = [3,2,1,5,2]
+
+arr.sort()
+print(arr[-1])
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Largest Element: 
+5
+
+=== Code Execution Successful ===
+
+// CODE : BETTER FORCE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+print('Largest Element: Optimal Solution')
+
+arr = [3, 2, 1, 5, 2]
+
+largest = arr[0]
+
+for i in arr:
+    if(i > largest):
+        largest = i
+        
+print(largest)
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Largest Element: Optimal Solution
+5
