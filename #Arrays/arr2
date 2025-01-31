@@ -22,7 +22,7 @@ Largest Element:
 
 === Code Execution Successful ===
 
-// CODE : BETTER FORCE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// CODE : OPTIMAL FORCE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 print('Largest Element: Optimal Solution')
 
@@ -40,3 +40,29 @@ print(largest)
 
 Largest Element: Optimal Solution
 5
+
+
+// CODE : BETTER FORCE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+print('Second Largest Element: Optimal Solution')
+
+arr = [3, 2, 1, 5, 2]
+
+largest = arr[0]
+
+for i in arr:
+    if(i > largest):
+        largest = i
+        
+slargest = -1
+
+for i in arr:
+    if((i > slargest) & (i != largest)):
+        slargest = i
+        
+print(slargest)
+
+
+// OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Second Largest Element: Optimal Solution
+3
+
