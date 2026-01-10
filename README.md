@@ -348,3 +348,182 @@ For each problem do:
   [https://leetcode.com/problems/sliding-window-maximum/](https://leetcode.com/problems/sliding-window-maximum/)
 
 ---
+
+# 📅 WEEK 3 — LINKED LIST + STACK + QUEUE (CORE DATA STRUCTURES)
+
+---
+
+## 🔹 Day 1 — Linked List Basics (Foundation)
+
+**Goal:** Pointer movement + traversal confidence
+
+1. Reverse Linked List
+   [https://leetcode.com/problems/reverse-linked-list/](https://leetcode.com/problems/reverse-linked-list/)
+   **Pattern:** Iterative pointer reversal
+
+2. Middle of the Linked List
+   [https://leetcode.com/problems/middle-of-the-linked-list/](https://leetcode.com/problems/middle-of-the-linked-list/)
+   **Pattern:** Slow & fast pointers
+
+3. Linked List Cycle
+   [https://leetcode.com/problems/linked-list-cycle/](https://leetcode.com/problems/linked-list-cycle/)
+   **Pattern:** Floyd’s cycle detection
+
+4. Remove Duplicates from Sorted List
+   [https://leetcode.com/problems/remove-duplicates-from-sorted-list/](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
+   **Pattern:** In-place pointer adjustment
+
+5. Merge Two Sorted Lists
+   [https://leetcode.com/problems/merge-two-sorted-lists/](https://leetcode.com/problems/merge-two-sorted-lists/)
+   **Pattern:** Two pointers on lists
+
+---
+
+## 🔹 Day 2 — Linked List (Intermediate Pointer Control)
+
+**Goal:** Deleting, splitting, re-wiring lists
+
+1. Remove Nth Node From End of List
+   [https://leetcode.com/problems/remove-nth-node-from-end-of-list/](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+   **Pattern:** Two pointers (gap technique)
+
+2. Intersection of Two Linked Lists
+   [https://leetcode.com/problems/intersection-of-two-linked-lists/](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+   **Pattern:** Pointer switching trick
+
+3. Palindrome Linked List
+   [https://leetcode.com/problems/palindrome-linked-list/](https://leetcode.com/problems/palindrome-linked-list/)
+   **Pattern:** Reverse second half + compare
+
+4. Odd Even Linked List
+   [https://leetcode.com/problems/odd-even-linked-list/](https://leetcode.com/problems/odd-even-linked-list/)
+   **Pattern:** Partitioning pointers
+
+5. Delete Node in a Linked List
+   [https://leetcode.com/problems/delete-node-in-a-linked-list/](https://leetcode.com/problems/delete-node-in-a-linked-list/)
+   **Pattern:** Value overwrite trick
+
+---
+
+## 🔹 Day 3 — Advanced Linked List (Google-style)
+
+**Goal:** Complex pointer rearrangement
+
+1. Reorder List
+   [https://leetcode.com/problems/reorder-list/](https://leetcode.com/problems/reorder-list/)
+   **Pattern:** Find middle + reverse + merge
+
+2. Swap Nodes in Pairs
+   [https://leetcode.com/problems/swap-nodes-in-pairs/](https://leetcode.com/problems/swap-nodes-in-pairs/)
+   **Pattern:** Dummy node + pointer swap
+
+3. Reverse Nodes in k-Group
+   [https://leetcode.com/problems/reverse-nodes-in-k-group/](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+   **Pattern:** Group reversal (hard, very important)
+
+4. Rotate List
+   [https://leetcode.com/problems/rotate-list/](https://leetcode.com/problems/rotate-list/)
+   **Pattern:** Circular list + modulo
+
+5. Add Two Numbers
+   [https://leetcode.com/problems/add-two-numbers/](https://leetcode.com/problems/add-two-numbers/)
+   **Pattern:** Carry handling with lists
+
+---
+
+## 🔹 Day 4 — Stack Fundamentals
+
+**Goal:** LIFO logic + stack usage patterns
+
+1. Valid Parentheses
+   [https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/)
+   **Pattern:** Stack matching
+
+2. Min Stack
+   [https://leetcode.com/problems/min-stack/](https://leetcode.com/problems/min-stack/)
+   **Pattern:** Stack with auxiliary tracking
+
+3. Implement Stack using Queues
+   [https://leetcode.com/problems/implement-stack-using-queues/](https://leetcode.com/problems/implement-stack-using-queues/)
+   **Pattern:** Queue manipulation
+
+4. Evaluate Reverse Polish Notation
+   [https://leetcode.com/problems/evaluate-reverse-polish-notation/](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+   **Pattern:** Stack evaluation
+
+5. Baseball Game
+   [https://leetcode.com/problems/baseball-game/](https://leetcode.com/problems/baseball-game/)
+   **Pattern:** Stack simulation
+
+---
+
+## 🔹 Day 5 — Monotonic Stack (Very Important)
+
+**Goal:** Range & next-element problems (Google favorite)
+
+1. Next Greater Element I
+   [https://leetcode.com/problems/next-greater-element-i/](https://leetcode.com/problems/next-greater-element-i/)
+   **Pattern:** Monotonic decreasing stack
+
+2. Next Greater Element II
+   [https://leetcode.com/problems/next-greater-element-ii/](https://leetcode.com/problems/next-greater-element-ii/)
+   **Pattern:** Circular array + stack
+
+3. Daily Temperatures
+   [https://leetcode.com/problems/daily-temperatures/](https://leetcode.com/problems/daily-temperatures/)
+   **Pattern:** Monotonic stack (classic)
+
+4. Remove K Digits
+   [https://leetcode.com/problems/remove-k-digits/](https://leetcode.com/problems/remove-k-digits/)
+   **Pattern:** Greedy + monotonic stack
+
+5. Largest Rectangle in Histogram
+   [https://leetcode.com/problems/largest-rectangle-in-histogram/](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+   **Pattern:** Monotonic stack (hard, must-do)
+
+---
+
+## 🔹 Day 6 — Queue, Deque & Mixed Practice
+
+**Goal:** BFS-style thinking + sliding window support
+
+1. Implement Queue using Stacks
+   [https://leetcode.com/problems/implement-queue-using-stacks/](https://leetcode.com/problems/implement-queue-using-stacks/)
+   **Pattern:** Stack → queue conversion
+
+2. Sliding Window Maximum
+   [https://leetcode.com/problems/sliding-window-maximum/](https://leetcode.com/problems/sliding-window-maximum/)
+   **Pattern:** Monotonic deque
+
+3. Design Circular Queue
+   [https://leetcode.com/problems/design-circular-queue/](https://leetcode.com/problems/design-circular-queue/)
+   **Pattern:** Circular buffer
+
+4. Asteroid Collision
+   [https://leetcode.com/problems/asteroid-collision/](https://leetcode.com/problems/asteroid-collision/)
+   **Pattern:** Stack collision simulation
+
+5. Simplify Path
+   [https://leetcode.com/problems/simplify-path/](https://leetcode.com/problems/simplify-path/)
+   **Pattern:** Stack + string parsing
+
+---
+
+## 🔁 Day 7 — WEEK 3 REVISION (NON-NEGOTIABLE)
+
+### Mandatory tasks:
+
+* Re-solve **Reverse Linked List** (no help)
+* Re-solve **Remove Nth Node From End**
+* Re-solve **Daily Temperatures**
+* Re-solve **Largest Rectangle in Histogram**
+
+### Write 1-page notes on:
+
+* Slow vs fast pointer logic
+* Dummy node usage
+* Monotonic stack rules
+* Common linked list bugs (null.next, lost pointers)
+
+---
+
